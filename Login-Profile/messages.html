@@ -1,0 +1,29 @@
+<?php
+// Connect to the database
+$pdo = new PDO('mysql:host=localhost;dbname=login_db', 'username', 'password');
+
+// Fetch messages from the 'messages' table
+$sql = "SELECT message FROM messages";
+$stmt = $pdo->query($sql);
+
+$messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($messages);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submitted Messages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="message-board">
+    <h1>Submitted Messages</h1>
+    <ul id="messageList"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
