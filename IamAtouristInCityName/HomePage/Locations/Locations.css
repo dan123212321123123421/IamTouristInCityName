@@ -1,0 +1,121 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+    margin-bottom: 10px;
+}
+header{
+    background-color: #000000;
+    height: 55px;
+    width: 100%;
+    justify-content: center;
+  }
+.ButNav{
+  
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.doi {
+  
+    
+  margin-top: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(136, 140, 141, 0.527), rgba(49, 51, 54, 0.8)), url("poze/Piața_Victoriei_Timișoara.jpg");
+    z-index: 0;
+    background-size: cover;
+    
+}
+.ButoaneNAV{
+	display: flex;
+	width: 100%;
+	height: 4vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.ButNAV {
+    margin-right: 100px;
+    background-color: #000000;
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+	min-width: 80px;
+	margin: auto;
+    list-style-type: none;
+}
+
+.ButNAV:hover {
+  background-color: #252525;
+  background-size: 100% 100%;
+  color: #ffffff;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #9b9b9b;
+	font-weight: bold;
+}
+.ButNAV:active {
+  transform: translateY(2px);
+}
+
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1,1);
+}
+}
+.color-change{
+    background-color:#3c3b3b;
+}
+#change{
+  font-weight: 1000;
+  margin-top: 0;
+  font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+    display: block;
+    letter-spacing: 5px;
+}
+section {
+   
+    position: relative;
+    z-index: 1; /* Increase the z-index to 2 or higher */
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.484);
+    max-width: 500px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 5px; 
+   margin-top: 0;
+   
+    
+     
+}

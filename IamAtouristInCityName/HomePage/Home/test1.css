@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  box-sizing: border-box;
+}
+body{
+	background: #ffffff;
+  
+}
+
+.header-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+header{
+    background-color: #000000;
+    height: 54px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.ButoaneNAV{
+	display: flex;
+	width: 100%;
+	height: 4vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.ButNAV {
+    background-color: #000000;
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+	min-width: 80px;
+	margin: auto;
+}
+
+.ButNAV:hover {
+  background-color: #252525;
+  background-size: 100% 100%;
+  color: #ffffff;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #9b9b9b;
+	font-weight: bold;
+}
+.ButNAV:active {
+  transform: translateY(2px);
+}
+
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 10px;
+    }
+}
+.INToras{
+  position:absolute;
+  z-index: 1;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(28, 28, 28, 0.377);
+  padding: 13px;
+  border-radius: 9px;
+}
+
+
+.header2 {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(136, 140, 141, 0.527),
+   rgba(49, 51, 54, 0.8)),
+   url("poze/Piața_Victoriei_Timișoara.jpg");
+   z-index: 0;
+  background-size: cover;
+    
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { 
+  font-size: 20px;
+   
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+    margin-top: 15px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+
+.button:hover {
+    background-color: #393838;
+    animation: spring 300ms ease-out;
+}
+#hiddenContent {
+    display: none;
+}
+ .container {
+     position: relative;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+        .button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        .sidebar {
+            
+            height: 80%;
+            background-color: #0000005c;
+            position: absolute;
+            overflow-y: hidden;
+             overflow-x: hidden;
+            overflow: hidden;
+            transition: 0.5s;
+            
+            color: rgb(255, 255, 255);
+            z-index: 1;
+        }
+
+       
+
+     .scrollable-content {
+            margin: 0; 
+            padding: 0; 
+            overflow-y: scroll;
+            overflow-x: hidden;
+            max-height: calc(100% - 60px);
+            position: absolute;
+            top: 60px; /* Adjust this value according to your layout */
+            bottom: 0;
+            left: 0;
+            right: -17px;
+                
+            
+        }
+.announcement {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading in each announcement */
+.announcement h2 {
+    color: #fff;
+}
+
+/* Paragraph in each announcement */
+.announcement p {
+    color: #ccc;
+}

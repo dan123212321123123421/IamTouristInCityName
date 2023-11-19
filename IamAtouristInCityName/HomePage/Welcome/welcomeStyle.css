@@ -1,0 +1,88 @@
+h1{
+
+ border-radius: 0.25em;
+ box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+ padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 45px;
+  place-self: center;
+}
+ 
+ 
+  body {
+   
+    display: grid;
+    
+    min-height: 100vh;
+    
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(136, 140, 141, 0.527),
+   rgba(49, 51, 54, 0.8)),
+   url("poze/city-light-skyline-bokeh.jpg");
+   z-index: 0;
+  background-size: cover;
+    
+    position: relative;
+  }
+  /* <select> styles */
+  select {
+    /* Reset */
+  
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 27rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255,0.3)3em);
+    color: rgb(0, 0, 0);
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  
+   
+    
+  }
+
+  #Country{
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+  }
+  #City{
+    font-size: 30px;
+    
+    position: absolute;
+    top: 40%;
+    right: 25%;
+  }
+  
+  /* <option> colors */
+  option {
+    color: rgb(192, 191, 191);
+    font-size: 20px;
+    background-color:rgb(83, 83, 83);
+  }
+#button{
+  
+  
+  position: absolute;
+top: 60%;
+left: 50%;
+transform: translateX(-50%); /* Center the button horizontally */
+    
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+     background-color: rgba(255, 255, 255, 0.404);
+     font-size: 25px;
+     
+  
+}
+
+  
