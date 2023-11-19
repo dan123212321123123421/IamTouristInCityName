@@ -1,0 +1,150 @@
+h2{
+
+ border-radius: 5px;
+ box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.288);
+ padding: 30px;
+  background-color: rgba(37, 37, 37, 0.473);
+  font-size: 45px;
+  place-self: center;
+  letter-spacing: 6px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+ 
+ 
+  body {
+   
+    display: grid;
+    
+    min-height: 100vh;
+    
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(110, 112, 112, 0.514),
+   rgba(28, 29, 31, 0.432)),
+   url("random-san-francisco-street-blurred-background-free-photo.jpg");
+   z-index: 0;
+  background-size: cover;
+    
+    position: relative;
+  }
+  /* <select> styles */
+  select {
+    /* Reset */
+  
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 27rem;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.288);
+
+  
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    rgba(37, 37, 37, 0.473);
+    color: rgb(0, 0, 0);
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  
+   
+    
+  }
+
+  #Country{
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    
+  }
+  #City{
+    font-size: 30px;
+    
+    position: absolute;
+    top: 40%;
+    right: 25%;
+  }
+  
+  /* <option> colors */
+  option {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgba(37, 37, 37, 0.473);
+  }
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: rgba(37, 37, 37, 0.349);
+  --c: rgb(255, 255, 255);
+  color: var(--c);
+  font-size: 16px;
+  border: 2px solid var(--c);
+  border-radius: 5px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 3em;
+  position: absolute;
+top: 55%;
+left: 50%;
+transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
