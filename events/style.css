@@ -1,0 +1,152 @@
+body{
+  background:#5C717F;
+}
+.direction{
+  text-align: center;
+}
+.direction button{
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #ffffff44;
+  border:none;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin:0 10px;
+}
+.direction button:hover{
+  background-color: #ffffff;
+}
+.item{
+  border-radius: 5px;
+  width:300px;
+  height:500px;
+  background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+  overflow: hidden;
+  transition: 0.5s;
+  margin:10px;
+  scroll-snap-align: start;
+}
+.item .avatar{
+  display: block;
+  
+  width:300px;
+  height:200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+  padding:30px;
+  
+}
+.item .content table td{
+  padding:10px 0;
+  border-bottom: 1px solid #AEC0CE;
+}
+.item .content table td:nth-child(2){
+  text-align: right;
+}
+.item .nameGroup{
+  text-align: center;
+  border-bottom:none!important;
+}
+#list{
+  display: flex;
+  width:max-content;
+}
+#formList{
+  width:1280px;
+  max-width: 100%;
+  overflow: auto;
+  margin:100px auto 50px;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .item{
+      width: calc(33.3vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .item{
+      width: calc(50vw - 20px);
+  }
+  .direction{
+      display: none;
+  }
+}
+header{
+  background-color: #000000;
+  height: 55px;
+  width: 100%;
+  justify-content: center;
+}
+.ButNav{
+
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.ButoaneNAV{
+	display: flex;
+	width: 100%;
+	height: 4vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.ButNAV {
+    margin-right: 100px;
+    background-color: #000000;
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+	min-width: 80px;
+	margin: auto;
+    list-style-type: none;
+}
+
+.ButNAV:hover {
+  background-color: #252525;
+  background-size: 100% 100%;
+  color: #ffffff;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #9b9b9b;
+	font-weight: bold;
+}
+.ButNAV:active {
+  transform: translateY(2px);
+}
+
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1,1);
+}
+}
+.color-change{
+    background-color:#3c3b3b;
+}
